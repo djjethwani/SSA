@@ -32,9 +32,9 @@ public class AuthController {
 	public ResponseEntity<Object> signUp(@RequestBody SignUp signUp){
 		JSONObject response = new JSONObject();
 		
-		if(usersRepo.findByEmail(signUp.getEmail()).size() == 0) {
+		if(usersRepo.findByPhone(signUp.getPhone()).size() == 0) {
 			Users newUser = new Users();
-			newUser.setEmail(signUp.getEmail());
+			newUser.setPhone(signUp.getPhone());
 			newUser.setPassword(signUp.getPassword());
 			newUser.setName(signUp.getName());
 			newUser.setRole("user");
@@ -42,7 +42,7 @@ public class AuthController {
 			
 			
 			
-			String token = JwtUtil.generateToken(signUp.getEmail());
+			String token = JwtUtil.generateToken(signUp.getPhone());
 			
 			JSONObject userObj = new JSONObject();
 			
@@ -52,6 +52,7 @@ public class AuthController {
 			response.put("token", token);
 		}else {
 			response.put("message", "Phone number already present, plesae login with same phone number");
+			return ResponseEntity.status(HttpStatus.BAD_REQUEST).contentType(MediaType.APPLICATION_JSON).body(response.toString());
 		}
 		
 		
@@ -67,9 +68,9 @@ public class AuthController {
 		JSONObject response = new JSONObject();
 		if(authToken != null) {
 			authToken = authToken.replace("Bearer ", "");
-			String email = JwtUtil.extractUsername(authToken);
-			System.out.println("email" + email);
-			List<Users> users = usersRepo.findByEmail(email);
+			String phone = JwtUtil.extractUsername(authToken);
+			System.out.println("phone" + phone);
+			List<Users> users = usersRepo.findByPhone(phone);
 			if(users.size() != 0) {
 				response.put("user", new JSONObject(users.get(0)));
 				return ResponseEntity.status(HttpStatus.OK).contentType(MediaType.APPLICATION_JSON).body(new JSONObject().put("data", response).toString());
@@ -85,12 +86,12 @@ public class AuthController {
 	@PostMapping("/auth/login")
 	public ResponseEntity<Object> login(@RequestBody Login login){
 		JSONObject response = new JSONObject();
-		List<Users> users =usersRepo.findByEmail(login.getEmail()); 
+		List<Users> users =usersRepo.findByPhone(login.getPhone()); 
 		if(users.size() == 0 || users.size() > 1 ) {
 			response.put("message", "Account does not exists");
 		}else {
 			if(users.get(0).getPassword().equals(login.getPassword())) {
-				String token = JwtUtil.generateToken(users.get(0).getEmail());
+				String token = JwtUtil.generateToken(users.get(0).getPhone());
 				Users user = users.get(0);
 				
 				response.put("user", new JSONObject(user));

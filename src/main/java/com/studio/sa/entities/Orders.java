@@ -30,6 +30,7 @@ public class Orders {
 	private boolean isPaid;
 	private String paymentMethod;
 	private String status;
+	private String downloadUrl;
 	
 	@CreatedDate
 	private Date createdAt;
@@ -112,6 +113,14 @@ public class Orders {
 
 	public void setModifiedDate(Date modifiedDate) {
 		this.modifiedDate = modifiedDate;
+	}
+
+	public String getDownloadUrl() {
+		return downloadUrl;
+	}
+
+	public void setDownloadUrl(String downloadUrl) {
+		this.downloadUrl = downloadUrl;
 	}
 
 	

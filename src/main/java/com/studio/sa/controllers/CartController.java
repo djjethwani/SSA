@@ -55,9 +55,9 @@ public class CartController {
 		JSONObject response = new JSONObject();
 		if(authToken != null) {
 			authToken = authToken.replace("Bearer ", "");
-			String email = JwtUtil.extractUsername(authToken);
-			System.out.println("email" + email);
-			List<Users> users = usersRepo.findByEmail(email);
+			String phone = JwtUtil.extractUsername(authToken);
+			System.out.println("phone" + phone);
+			List<Users> users = usersRepo.findByPhone(phone);
 			if(users.size() != 0) {
 				Users user = users.get(0);
 				List<Cart> cart = cartJpaRepo.findByUser(user.get_id());
@@ -87,9 +87,9 @@ public class CartController {
 		JSONObject response = new JSONObject();
 		if(authToken != null) {
 			authToken = authToken.replace("Bearer ", "");
-			String email = JwtUtil.extractUsername(authToken);
-			System.out.println("email" + email);
-			List<Users> users = usersRepo.findByEmail(email);
+			String phone = JwtUtil.extractUsername(authToken);
+			System.out.println("email" + phone);
+			List<Users> users = usersRepo.findByPhone(phone);
 			if(users.size() != 0) {
 				Users user = users.get(0);
 				List<Cart> cart = cartJpaRepo.findByUser(user.get_id());
@@ -168,9 +168,9 @@ public class CartController {
 		JSONObject response = new JSONObject();
 		if(authToken != null) {
 			authToken = authToken.replace("Bearer ", "");
-			String email = JwtUtil.extractUsername(authToken);
-			System.out.println("email" + email);
-			List<Users> users = usersRepo.findByEmail(email);
+			String phone = JwtUtil.extractUsername(authToken);
+			System.out.println("phone" + phone);
+			List<Users> users = usersRepo.findByPhone(phone);
 			if(users.size() != 0) {
 				Users user = users.get(0);
 				List<Cart> cart = cartJpaRepo.findByUser(user.get_id());
@@ -204,9 +204,9 @@ public class CartController {
 		JSONObject response = new JSONObject();
 		if(authToken != null) {
 			authToken = authToken.replace("Bearer ", "");
-			String email = JwtUtil.extractUsername(authToken);
-			System.out.println("email" + email);
-			List<Users> users = usersRepo.findByEmail(email);
+			String phone = JwtUtil.extractUsername(authToken);
+			System.out.println("phone" + phone);
+			List<Users> users = usersRepo.findByEmail(phone);
 			if(users.size() != 0) {
 				Users user = users.get(0);
 				List<Cart> cart = cartJpaRepo.findByUser(user.get_id());

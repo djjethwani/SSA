@@ -26,6 +26,7 @@ public class Users {
 	private String email;
 	private String password;
 	private String role;
+	private String phone;
 	private String googleId;
 	
 	
@@ -105,6 +106,16 @@ public class Users {
 
 	public void setModifiedDate(Date modifiedDate) {
 		this.modifiedDate = modifiedDate;
+	}
+	
+	
+
+	public String getPhone() {
+		return phone;
+	}
+
+	public void setPhone(String phone) {
+		this.phone = phone;
 	}
 
 	@Override

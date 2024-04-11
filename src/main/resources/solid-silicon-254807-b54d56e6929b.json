@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "solid-silicon-254807",
+  "private_key_id": "b54d56e6929bb5c399a48e1bd7fde6f08bdc38b5",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC3X5vJ1v/wWmY3\n2mPPMF0qprF9Xw224hzidmMPBqf/617FWM+fHy/ch5O9CE7RrPSt/w1gF2t13SL3\nL66MP4HdRklMqh27GP8LXoMMkTkwfDqP5ze+I8zqNVsJrD6QX2jk+RfsRtiqdmSF\nKq/A5OeqolFM3sOSVb/4waYH6fyWDkg8kRzBUEwZaMLYHlwOlUF1PVz2/assN+JA\nIKumZbL+Nj49QsA9xxHaMDp7l5iS5EbU+LaRyP8frzzi+LMdGKy4d57kqeNDxlRU\nHl+a1cCCoZjz8GjppYQgQ9NgyrhO4mEzd5Et651OIQiFQXn/TReJWSy6Luhd5ZC9\nfPpMONgrAgMBAAECggEAN4iZbhGSNjCyZzTY6EzN0lZkR0MrrJiixcSzsD/ETiFy\ndJK2Ygq4XHGkwOlMsXxPJ4in/NNq5GmBptmGY4vyINih5zlXwqtJxiAr0PkEGFZv\nB9iuzYMbEkzxUqca1W9HnZyAbbpw8ILlY1zvmBvauxboRz7pfJ5Cgqvmw9vNdoW+\nVD5g21rlBXePMxoUbSI7ugnIYFdoTfA19kE1Yowr7Wmc7wCeT4hw+J6RJZQPhfCH\nwYRNLRcHzMMOkaIiUyV1fLlxRVgJw+gIP/TwPp96i5TAA47JtsmQ4q/ARGMyzQTb\nC7eYv/ncxYfmoI6KId2GaGkWHkQBs5MiJKjGXD4jdQKBgQDlBvTY9THlhuMF8IPN\nOHFYyE2eZbtPORRUZlUphxSlq235lO0G2ogFS/VMkOAyCig4V6rAkIxJ7OsvPLNA\npSVB2EXlruak7irZ9ORu/HVxLgD9QexsMthi3E3Ckpf+wir6N1cpmpI+tPjnZtJz\nTOeI0d180f5/EMqpjcLOVBiq9QKBgQDM+DfRUKVj06h1RzCXWL2OSxVCpsAq9RYa\nN64KSxltoLhVkn9N7fijC9pp/Zwc3X0stAgP84YGALCZLMkZ5FhM2jxxK0W3IM+A\nYfvw/5TtMVVsJ4+QKsKiiTKhZOjLpKxPEgUKifHbaRhkLzSyh6fvcTnVkM0Z1Vo8\n0+RcrFXCnwKBgGIJxkoRO9i7Evd565GvtaWBqOhDOBlDn9Y5L/9k2YvJhHwwKf6j\nEVLjHxA1fCMvgeQMcwWXWtZSWqKP41Oq3fX/tHwLkKPNZ/6A/EAeRc+7F6VR0PjI\nEyTOlWLTCcl+KJOPmPowNqYtJdc4hqHgq8Q/wgYqhjyyXW6TRm64RQ75AoGAKQLt\nYDNLtGqwRS8GWPIHk4YQbfKhdrbtQjer2iFmqBnFaFHUqQoZer4vaI+3AcuLdTtc\ndZybT24p56wfXM/knxP3jglDfL3S5vQ0DeeFq+P4HJjZz9XOdekPuV1Qexaq53NK\nkO5C90zS9ZDAcYxVHMLB+Kptb2LSGGOpSKWuzy8CgYEAy/EqDhfCL1fuGi0PErVg\nzTFWK4wi+Gha27Z2U8qd8sceV3FjbVxtdwn8MPJbeqZWRDZGWBNQNka8bYUBxTJR\nSE/WW0wNBiGiQcymeKtgi6wu1UeZXuSMnKm2GcsNuhxaMCIFwdqyKKxYyhnfGeOF\nznKwlFan6iq2337B1CBflgQ=\n-----END PRIVATE KEY-----\n",
+  "client_email": "garmentaback@solid-silicon-254807.iam.gserviceaccount.com",
+  "client_id": "109171550036694118681",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/garmentaback%40solid-silicon-254807.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

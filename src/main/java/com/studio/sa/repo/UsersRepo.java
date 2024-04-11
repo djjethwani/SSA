@@ -10,4 +10,5 @@ import com.studio.sa.entities.Users;
 @Repository
 public interface UsersRepo extends JpaRepository<Users, Long> {
 	public List<Users> findByEmail(String email);
+	public List<Users> findByPhone(String phone);
 }
